@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웨딩 청첩장 - 신랑 ♥ 신부</title>
+    <meta name="description" content="저희 두 사람의 소중한 날에 초대합니다">
+    
+    <!-- Open Graph for KakaoTalk sharing -->
+    <meta property="og:title" content="웨딩 청첩장 - 신랑 ♥ 신부">
+    <meta property="og:description" content="저희 두 사람의 소중한 날에 초대합니다">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Kakao SDK -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle">WE'RE GETTING MARRIED</p>
+                <h1 class="hero-names">
+                    <span class="groom-name">김민수</span>
+                    <span class="heart-icon">♥</span>
+                    <span class="bride-name">이지현</span>
+                </h1>
+                <p class="hero-date">2024년 12월 25일 토요일 오후 2시</p>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Invitation Message Section -->
+    <section class="invitation-section">
+        <div class="container">
+            <div class="invitation-card">
+                <h2 class="section-title">초대합니다</h2>
+                <div class="divider"></div>
+                <p class="invitation-text">
+                    서로가 마주보며 다져온 사랑을<br>
+                    이제 함께 한 곳을 바라보며<br>
+                    걸어갈 수 있는 큰 사랑으로 키우고자 합니다.<br>
+                    <br>
+                    저희 두 사람의 앞날을 축복해 주시고<br>
+                    격려해 주시면 감사하겠습니다.
+                </p>
+            </div>
+            
+            <!-- Parents Info -->
+            <div class="parents-info">
+                <div class="parent-item">
+                    <p class="parent-label">신랑측 혼주</p>
+                    <p class="parent-names">김철수 · 박영희 <span class="parent-relation">의 장남</span></p>
+                </div>
+                <div class="parent-item">
+                    <p class="parent-label">신부측 혼주</p>
+                    <p class="parent-names">이상철 · 최순자 <span class="parent-relation">의 장녀</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">우리의 순간들</h2>
+            <div class="divider"></div>
+            
+            <!-- Mobile Carousel -->
+            <div class="gallery-carousel mobile-only">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800" alt="Wedding Photo 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800" alt="Wedding Photo 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=800" alt="Wedding Photo 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800" alt="Wedding Photo 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800" alt="Wedding Photo 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=800" alt="Wedding Photo 6">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots"></div>
+            </div>
+            
+            <!-- Desktop Grid -->
+            <div class="gallery-grid desktop-only">
+                <div class="gallery-item" data-index="0">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800" alt="Wedding Photo 1">
+                </div>
+                <div class="gallery-item" data-index="1">
+                    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800" alt="Wedding Photo 2">
+                </div>
+                <div class="gallery-item" data-index="2">
+                    <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=800" alt="Wedding Photo 3">
+                </div>
+                <div class="gallery-item" data-index="3">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800" alt="Wedding Photo 4">
+                </div>
+                <div class="gallery-item" data-index="4">
+                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800" alt="Wedding Photo 5">
+                </div>
+                <div class="gallery-item" data-index="5">
+                    <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=800" alt="Wedding Photo 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-prev" id="lightboxPrev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" id="lightboxNext">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery Image" id="lightboxImage">
+        </div>
+    </div>
+
+    <!-- Wedding Info Section -->
+    <section class="wedding-info-section">
+        <div class="container">
+            <h2 class="section-title">예식 안내</h2>
+            <div class="divider"></div>
+            
+            <div class="info-card">
+                <div class="info-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div class="info-content">
+                        <h3>날짜</h3>
+                        <p>2024년 12월 25일 토요일</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="info-content">
+                        <h3>시간</h3>
+                        <p>오후 2시 00분</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-content">
+                        <h3>장소</h3>
+                        <p>더 클래식 웨딩홀</p>
+                        <p class="address">서울특별시 강남구 테헤란로 123</p>
+                        <p class="address-detail">그랜드홀 3층</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map Container -->
+            <div class="map-container">
+                <div id="map" class="map-placeholder">
+                    <p>지도가 여기에 표시됩니다</p>
+                </div>
+            </div>
+            
+            <button class="direction-button" onclick="openDirections()">
+                <i class="fas fa-directions"></i>
+                길찾기
+            </button>
+        </div>
+    </section>
+
+    <!-- Guestbook Section -->
+    <section class="guestbook-section">
+        <div class="container">
+            <h2 class="section-title">축하 메시지</h2>
+            <div class="divider"></div>
+            
+            <div class="guestbook-form-card">
+                <form id="guestbookForm" class="guestbook-form">
+                    <div class="form-group">
+                        <input type="text" id="guestName" placeholder="이름" required maxlength="20">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="guestMessage" placeholder="축하 메시지를 남겨주세요" required maxlength="200" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i>
+                        메시지 남기기
+                    </button>
+                </form>
+            </div>
+            
+            <div class="guestbook-list" id="guestbookList">
+                <!-- Messages will be loaded here -->
+                <div class="loading-message">메시지를 불러오는 중...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">연락하기</h2>
+            <div class="divider"></div>
+            
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <h3>신랑측</h3>
+                    <div class="contact-item">
+                        <p class="contact-name">신랑 김민수</p>
+                        <div class="contact-buttons">
+                            <a href="tel:010-1234-5678" class="contact-btn">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="sms:010-1234-5678" class="contact-btn">
+                                <i class="fas fa-sms"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <p class="contact-name">신랑 아버지 김철수</p>
+                        <div class="contact-buttons">
+                            <a href="tel:010-1111-2222" class="contact-btn">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="sms:010-1111-2222" class="contact-btn">
+                                <i class="fas fa-sms"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <p class="contact-name">신랑 어머니 박영희</p>
+                        <div class="contact-buttons">
+                            <a href="tel:010-3333-4444" class="contact-btn">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="sms:010-3333-4444" class="contact-btn">
+                                <i class="fas fa-sms"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>신부측</h3>
+                    <div class="contact-item">
+                        <p class="contact-name">신부 이지현</p>
+                        <div class="contact-buttons">
+                            <a href="tel:010-5678-9012" class="contact-btn">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="sms:010-5678-9012" class="contact-btn">
+                                <i class="fas fa-sms"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <p class="contact-name">신부 아버지 이상철</p>
+                        <div class="contact-buttons">
+                            <a href="tel:010-5555-6666" class="contact-btn">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="sms:010-5555-6666" class="contact-btn">
+                                <i class="fas fa-sms"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <p class="contact-name">신부 어머니 최순자</p>
+                        <div class="contact-buttons">
+                            <a href="tel:010-7777-8888" class="contact-btn">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="sms:010-7777-8888" class="contact-btn">
+                                <i class="fas fa-sms"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                Thank you for celebrating with us<br>
+                <span class="footer-names">김민수 ♥ 이지현</span>
+            </p>
+            <p class="footer-copyright">© 2024 Wedding Invitation</p>
+        </div>
+    </footer>
+
+    <!-- Floating KakaoTalk Share Button -->
+    <button class="kakao-share-button" id="kakaoShareBtn">
+        <i class="fas fa-share-alt"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

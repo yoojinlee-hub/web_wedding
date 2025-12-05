@@ -1,0 +1,96 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600&family=Nanum+Myeongjo:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables */
+:root {
+  /* Pastel Color Palette */
+  --color-ivory: #FFFEF7;
+  --color-beige: #F5F1E8;
+  --color-blush: #F9E5E5;
+  --color-rose: #E8C4C4;
+  --color-soft-pink: #FFF5F5;
+  --color-dark-text: #4A4A4A;
+  --color-light-text: #8B8B8B;
+  --color-white: #FFFFFF;
+  --color-gold: #D4AF37;
+  --color-shadow: rgba(0, 0, 0, 0.08);
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Serif KR', 'Nanum Myeongjo', serif;
+  background-color: var(--color-ivory);
+  color: var(--color-dark-text);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+/* Scrollbar Hide */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Animations */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Swiper Custom Styles */
+.infinity-loop-swiper {
+  padding: 20px 0;
+}
+
+.infinity-loop-swiper .swiper-slide {
+  transition: all 0.3s ease;
+}
+
+.infinity-loop-swiper .swiper-slide-active {
+  transform: scale(1.05);
+}
+
+:root {
+  --font-noto-serif: "Noto Serif KR", serif;
+  --font-nanum: "Nanum Myeongjo", serif;
+}
+
+body {
+  font-family: var(--font-noto-serif);
+  background-color: #FFFEF7;
+  color: #4A4A4A;
+  line-height: 1.8;
+}
